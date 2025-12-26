@@ -1,0 +1,75 @@
+---
+const stats = [
+  {
+    name: 'Years',
+    value: '10+',
+  },
+  {
+    name: 'Experts',
+    value: '15+',
+  },
+  {
+    name: 'Projects',
+    value: '120+',
+  },
+  {
+    name: 'Industries',
+    value: '4',
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <img
+        class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+        width="576"
+        height="864"
+        src="/assets/about.webp"
+        alt="Dixon Digital Marketing team collaborating"
+      />
+
+      <div class="flex flex-col gap-10">
+        <!-- Mission description -->
+        <div class="space-y-8 sm:space-y-12">
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
+
+          <div class="space-y-6">
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              Over the past 10+ years, our account managers have helped companies and brands build
+              meaningful online presences. We believe social media should feel authentic, engaging,
+              and intentional — not forced or formulaic.
+            </p>
+
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              With hands-on experience across in-person marketing, digital marketing, and hybrid
+              strategies, we create personalized social media content designed to help brands grow
+              and build strong communities. Every strategy we develop is tailored to the goals,
+              voice, and values of the business behind it.
+            </p>
+
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              Since opening in June 2021, Dixon Digital Marketing has led content marketing, product
+              marketing, partner marketing, social, PR, and customer marketing initiatives for
+              hospitals, teaching institutions, and recognized food and beverage brands. We proudly
+              partner with organizations ranked as leaders by U.S. News & World Report.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {
+            stats.map((stat) => (
+              <div class="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10">
+                <dt class="text-base">{stat.name}</dt>
+                <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
