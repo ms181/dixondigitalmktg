@@ -2,21 +2,27 @@
 const services = [
   {
     step: '01',
-    name: 'Social Media Management',
+    name: 'Strategy & Brand Growth',
     description:
-      'Complete management of your social platforms, including content creation, scheduling, and posting to maintain a consistent and professional brand presence.',
+      'We define your positioning, messaging, and direction so every marketing effort actually drives growth instead of guesswork.',
   },
   {
     step: '02',
-    name: 'Consulting',
+    name: 'Content & Social Media',
     description:
-      'Strategic consulting to review your current marketing efforts, identify opportunities, and create a clear plan to support your business goals.',
+      'From creation to posting, we handle your content end-to-end to keep your brand consistent, engaging, and worth noticing.',
   },
   {
     step: '03',
-    name: 'Rebranding',
+    name: 'Partnerships & Outreach',
     description:
-      'Aligning your brand strategy with your business vision through refined messaging, visuals, and positioning to support long-term growth.',
+      'We connect your brand with the right people and opportunities to expand reach, build credibility, and open new doors.',
+  },
+  {
+    step: '04',
+    name: 'Consulting',
+    description:
+      'Clear, actionable guidance to fix what is not working and move your marketing forward with confidence.',
   },
 ];
 ---
@@ -25,7 +31,7 @@ const services = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
       <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
-      <div class="grid gap-8 lg:grid-cols-3">
+      <div class="grid gap-8 lg:grid-cols-2">
         {
           services.map((service) => (
             <div class="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">

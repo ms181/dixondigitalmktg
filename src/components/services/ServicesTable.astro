@@ -1,43 +1,59 @@
 ---
 const services = [
   {
-    name: 'Social Media Management',
+    name: 'Strategic Marketing & Brand Growth',
     description:
-      'Complete social media management designed to build consistency, engagement, and long-term brand growth.',
-    action: 'Learn More',
+      'We build clarity before we chase growth. From positioning and messaging to audience alignment, every move is designed to compound, not just perform.',
+    action: 'Build My Strategy',
+    isFlagged: true,
     features: [
-      'Content creation aligned with your brand',
-      'Scheduled and manual posting',
-      'Platform management and engagement',
-      'Instagram, Facebook, LinkedIn & more',
-      'Ongoing performance review',
+      'Brand positioning and messaging clarity',
+      'Target audience refinement',
+      'Growth-focused marketing strategy',
+      'Channel and funnel planning',
+      'Ongoing optimization and direction',
+    ],
+  },
+  {
+    name: 'Content Creation & Social Media',
+    description:
+      'Content that does more than exist. We create, manage, and refine everything so your brand shows up sharp, consistent, and worth paying attention to.',
+    isFlagged: true,
+    action: 'Scale My Content',
+    features: [
+      'Content calendars and planning',
+      'Copywriting and creative direction',
+      'Design and brand consistency',
+      'Posting and platform management',
+      'Engagement and performance tracking',
+    ],
+  },
+  {
+    name: 'Partnerships, Outreach & Networking',
+    description:
+      'We put your brand in the right rooms. Strategic collaborations and relationships that expand reach, credibility, and real opportunities.',
+    action: 'Expand My Reach',
+    isFlagged: true,
+    features: [
+      'Brand and influencer partnerships',
+      'Outreach strategy and execution',
+      'Collaboration sourcing',
+      'Network building and positioning',
+      'Long-term relationship development',
     ],
   },
   {
     name: 'Consulting',
     description:
-      'Strategic guidance for brands seeking clarity, direction, and improved marketing performance.',
+      'No guesswork, just direction. We audit what you are doing, fix what is not working, and give you a clear path forward.',
+    action: 'Get Clarity',
     isFlagged: true,
-    action: 'Schedule a Consultation',
     features: [
-      'Brand and social media audit',
-      'Goal setting and strategy planning',
-      'SEO and ROI insights',
+      'Marketing and brand audit',
+      'Strategy and goal alignment',
+      'Gap and opportunity analysis',
       'Platform-specific recommendations',
-      'One-time or ongoing support',
-    ],
-  },
-  {
-    name: 'Rebranding',
-    description:
-      'Align your brand strategy with your business goals through refreshed visuals and messaging.',
-    action: 'Start a Rebrand',
-    features: [
-      'Brand strategy alignment',
-      'Visual identity updates',
-      'Content templates and highlights',
-      'Caption and hashtag strategy',
-      'Ongoing social media support',
+      'One-time or ongoing advisory',
     ],
   },
 ];
@@ -45,7 +61,7 @@ const services = [
 
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
+    <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-2">
       {
         services.map((item) => (
           <div
